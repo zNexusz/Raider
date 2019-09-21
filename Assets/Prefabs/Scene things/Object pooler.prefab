@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1687020641076604770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1687020641076604771}
+  - component: {fileID: 1687020641076604768}
+  m_Layer: 0
+  m_Name: Object pooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1687020641076604771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687020641076604770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1687020641076604768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687020641076604770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f485f44ad797148b5d7c675a7da41e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: Bullets
+    prefab: {fileID: 1384905177879302776, guid: f7ae291a15845154b96ee150c060a90b,
+      type: 3}
+    size: 5
+  - tag: EnemyBTracker
+    prefab: {fileID: 1384905177879302776, guid: 498ecce413c45df46ac345e8f687f805,
+      type: 3}
+    size: 10
+  - tag: Granade
+    prefab: {fileID: 5130288787391421801, guid: 58550b2a13ab54749b62159936e3b5fe,
+      type: 3}
+    size: 5
+  - tag: EnemyB
+    prefab: {fileID: 1384905177879302776, guid: 644c61fd4272cf545a6596c1fa237bd0,
+      type: 3}
+    size: 3
+  - tag: ToxBullet
+    prefab: {fileID: 5663609811584044046, guid: 880bcc5241ee85c469aca7fe69470a76,
+      type: 3}
+    size: 5

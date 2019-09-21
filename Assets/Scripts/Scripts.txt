@@ -1,0 +1,40 @@
+Player
+-PlayerMovement
+-Shootbullet
+-PlayerHealth
+-PlayerRespawn
+.boxcolider
+.rigidbody
+.Wall(material)
+,groundCheck gizmo(child)
+,LadderCheck gizmo(child)
+,WallCheck gizmo(child)
+'layer whatIsGround ground
+'layer whatIsLadder ladder
+'layer whatIsWall ground
+tag:Player
+
+Bullet
+-Bullet Destroy
+.boxcolider(trigger)
+.rigidbody(kinetic)
+tag:Bullet
+
+Block
+-BlockScript
+.boxcolider
+,layer(Ground)
+tag:BreakBlock
+
+Enemy
+-Enemy
+.boxcolider
+.rigidbody freeze z-rotaion
+Tag: Enemy
+
+Ladder
+.boxcolider(trigger)
+	TopStair
+	-stairtop
+	.Platform effector
+	.boxcolider used by effector
