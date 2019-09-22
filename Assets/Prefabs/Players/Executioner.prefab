@@ -56,6 +56,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -148,6 +149,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -165,7 +167,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.7}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -183,7 +185,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.42031306
+  m_Mass: 0.44684172
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -205,8 +207,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06427397, y: -0.0117685795}
-  m_Size: {x: 0.4843776, y: 0.97168684}
+  m_Offset: {x: 0.022870302, y: 0.01930356}
+  m_Size: {x: 0.5671849, y: 0.90954256}
   m_Direction: 0
 --- !u!114 &3331443283948532132
 MonoBehaviour:
@@ -272,6 +274,7 @@ MonoBehaviour:
     m_Bits: 512
   gManager: {fileID: 0}
   go: {fileID: 0}
+  joystick: {fileID: 0}
 --- !u!114 &3331443283948532128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  health: 2
+  health: 3
   gManager: {fileID: 0}
   go: {fileID: 0}
   rend: {fileID: 0}
@@ -332,7 +335,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3331443284310820001}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ladder Check
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -441,6 +444,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -572,6 +576,16 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5040570085796890565, guid: 098dfb4c3c401984982b20b6f7a502a9,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040570085796890565, guid: 098dfb4c3c401984982b20b6f7a502a9,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7707057174858319205, guid: 098dfb4c3c401984982b20b6f7a502a9,
         type: 3}
       propertyPath: Player
@@ -678,6 +692,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239165086204733119, guid: f0cf1b66868274545b4fc8614eeb4e9d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1239165086204733119, guid: f0cf1b66868274545b4fc8614eeb4e9d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1422729449944078932, guid: f0cf1b66868274545b4fc8614eeb4e9d,
         type: 3}

@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
 	private void Start()
 	{
 		Char = PlayerPrefs.GetInt("CurrCharacter");
+		FindObjectOfType<GManager>().Stats();
 	}
 	void Update()
 	{

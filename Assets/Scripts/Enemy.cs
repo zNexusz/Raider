@@ -20,7 +20,6 @@ public class Enemy : MonoBehaviour
 	//
 	public int health;
 	public GManager gManager;
-    public GameObject GManager;
     public Vector2 offset;
 	private Rigidbody2D rb;
 	public int killReward=5;
@@ -78,8 +77,7 @@ public class Enemy : MonoBehaviour
 		Player = GameObject.FindGameObjectWithTag("Player");
 		player = GameObject.FindGameObjectWithTag("Player").transform;
 		//
-		GManager = GameObject.FindGameObjectWithTag("PlayerManager");
-        gManager = GManager.GetComponent<GManager>();
+		gManager = FindObjectOfType<GManager>();
 		//
         RunNow = true;
 
@@ -160,7 +158,10 @@ public class Enemy : MonoBehaviour
             }
 		    timeBtwShots -= Time.deltaTime;
 	    }
-		    
+		else
+		{
+			return;
+		}    
 		StartCoroutine(EnemyStop());
     }
 
@@ -223,12 +224,6 @@ public class Enemy : MonoBehaviour
             StartCoroutine(ToxHit());
             ColorON++;
             StartCoroutine(ColorChanger());
-        }
-		
-        if (other.CompareTag("Range"))
-        {
-	        health = 0; 
-	        dead = true;
         }
 
         if (other.CompareTag("DeathBlock"))

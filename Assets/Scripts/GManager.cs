@@ -33,7 +33,7 @@ public class GManager : MonoBehaviour
 	public string currentScene;
 	private bool EndlessMode;
 	//potion
-	public bool Enemyflash;
+	public bool Enemyflash=false;
 	public bool shield_active;
     public Text Score;
 	
@@ -46,7 +46,6 @@ public class GManager : MonoBehaviour
 		if (Char != 1 && Char != 2 && Char != 3) PlayerPrefs.SetInt("CurrCharacter", 1);
 
 		currentScene = SceneManager.GetActiveScene().name;
-		Stats();
 		if (currentScene == "Endless")
 		{
 			EndlessMode = true;
@@ -75,7 +74,8 @@ public class GManager : MonoBehaviour
 
 	void Update()
 	{
-        Score.text = FindObjectOfType<StatusCurrency>().ThisScore.ToString("0");
+		playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().health;
+		if (currentScene=="Endless")Score.text = FindObjectOfType<StatusCurrency>().ThisScore.ToString("0");
 		Char = PlayerPrefs.GetInt("CurrCharacter");
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");//!! enemy counter
         
@@ -88,7 +88,6 @@ public class GManager : MonoBehaviour
 		if (currentScene != "Endless" && currentScene != "LevelSelector" && currentScene != "PlayerShop")
 		{
 			//level timer
-			playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().health;
 			//mission 
 			if (killed <= 0)
 			{
@@ -101,8 +100,7 @@ public class GManager : MonoBehaviour
 		if (currentScene == "Endless" && GameObject.Find("LevelManager").GetComponent<LevelManager>().EndReady == true)
 		{
 			killed = enemynum;
-			//level timer
-			playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().health;
+			//level time
 			//mission 
 			if (killed <= 0)
 			{
@@ -184,10 +182,11 @@ public class GManager : MonoBehaviour
 
 		if (Char == 2)
 		{
-			health = 3;
+			health = 6;
 			Damage = 1; 
 			EDamage = 2;
 			maxhp = 3;
+			Debug.Log("hey");
 		}
 
 		if (Char == 3)

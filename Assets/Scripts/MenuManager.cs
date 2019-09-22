@@ -11,6 +11,8 @@ public class MenuManager : MonoBehaviour
 	public GameObject GameOverMenu;
 	public GameObject home_but;
 	public GameObject retry_but;
+	public GameObject retryEnd_but;
+	public GameObject next_but;
 	public string currentScene;
 	//
 	public PlayerHealth playerHealth;
@@ -98,7 +100,7 @@ public class MenuManager : MonoBehaviour
 			//Time.timeScale = 0;
 			DeathMenu.SetActive(true);
 		}
-		if (playerHealth.health < 1 && ReviveLimit <= 0 && dead == false)
+		if (playerHealth.health < 1 && ReviveLimit < 1 && dead == true)
 		{
 			//Time.timeScale = 0;
 			GameOverMenu.SetActive(true);
@@ -107,6 +109,7 @@ public class MenuManager : MonoBehaviour
 		if (dead == true)
 		{
 			missioncleared.SetActive(false);
+			if(currentScene == "Endless")retryEnd_but.SetActive(true);
 		}
 
 		if (currentScene == "Endless")
@@ -118,12 +121,19 @@ public class MenuManager : MonoBehaviour
 		{
 			home_but.SetActive(false);
 			retry_but.SetActive(true);
+			retryEnd_but.SetActive(false);
 		}
 
 		if(playerHealth.health > 0)
 		{
 			DeathMenu.SetActive(false);
 			GameOverMenu.SetActive(false);
+		}
+
+		if(playerHealth.health < 1 && ReviveLimit < 1)
+		{
+			dead = true;
+			next_but.SetActive(false);
 		}
 
         if (currentScene == "Endless")
@@ -153,19 +163,10 @@ public class MenuManager : MonoBehaviour
 
 		if (currentScene == "Endless")
 		{
-
-			if (dead == true)
-			{
-				GameObject.Find("Fader").GetComponent<SceneFader>().FadeTo = "LevelSelector";
-				GameObject.Find("Fader").GetComponent<SceneFader>().FadeNow();
-			}
-			else
-			{
-				GameOverMenu.SetActive(false);
-				GameObject.Find("LevelManager").GetComponent<LevelGenerator>().destroy();
-				gManager.timeLimit = gManager.givenTime;
-				StartCoroutine(GameObject.Find("UIMenu").GetComponent<Timeruicount>().CountNow());
-			}
+			GameOverMenu.SetActive(false);
+			GameObject.Find("LevelManager").GetComponent<LevelGenerator>().destroy();
+			gManager.timeLimit = gManager.givenTime;
+			StartCoroutine(GameObject.Find("UIMenu").GetComponent<Timeruicount>().CountNow());
 		}
 		else
 		{

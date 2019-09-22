@@ -67,127 +67,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapCollection:
-  - {fileID: 2800000, guid: 4bca14c07b32eea46ab637ac79410a0d, type: 3}
-  - {fileID: 2800000, guid: 4bca14c07b32eea46ab637ac79410a0d, type: 3}
+  - {fileID: 2502289280305834272, guid: 959ee49efdc7fb848bce60186fd31ee5, type: 3}
+  - {fileID: 2502289280305834272, guid: d8761c8f04c84ae4184e593ed4827eb0, type: 3}
+  - {fileID: 2502289280305834272, guid: d36a2712fe5f0aa44b030d94216ca234, type: 3}
+  - {fileID: 2502289280305834272, guid: eedc7418e56e3cc45a99bed275058c4b, type: 3}
+  - {fileID: 2502289280305834272, guid: 859de22df93e24e4fa85945486a56cfe, type: 3}
+  - {fileID: 2502289280305834272, guid: a3d1ef022714a1d46b324d94e328fb90, type: 3}
+  - {fileID: 2502289280305834272, guid: 689df6d71c9aff045aa3cd5e843a2aad, type: 3}
+  - {fileID: 2502289280305834272, guid: a336c8d270458414d92b0aa66e917b56, type: 3}
+  - {fileID: 2502289280305834272, guid: 8035f3a33deae074ea8b02ca3f4357c1, type: 3}
+  - {fileID: 2502289280305834272, guid: 23bc45299a33af440860d5001f9476af, type: 3}
   map: {fileID: 2800000, guid: 4bca14c07b32eea46ab637ac79410a0d, type: 3}
-  colorMappings:
-  - color: {r: 1, g: 0, b: 0, a: 1}
-    prefab: {fileID: 5902618901923431822, guid: cc7a210c1453df447837011779c25f23,
-      type: 3}
-  - color: {r: 1, g: 1, b: 0, a: 1}
-    prefab: {fileID: 6641861396966693277, guid: c21992cc3a4822840a8d3496b113a8e3,
-      type: 3}
-  - color: {r: 0, g: 0, b: 0, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 2e828c1d9d8c53b44962fba0acf116b1,
-      type: 3}
-  - color: {r: 0, g: 0, b: 0, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: b7694e376b6c9d34081f74bc2157ca2c,
-      type: 3}
-  - color: {r: 1, g: 1, b: 1, a: 1}
-    prefab: {fileID: 483352921409331545, guid: 028dca3af415c754593f24de526001d8, type: 3}
-  - color: {r: 0.6784314, g: 0.6784314, b: 0.6784314, a: 1}
-    prefab: {fileID: 9208517904830825421, guid: f6ef27e69869200429f6ae5dd6a78d92,
-      type: 3}
-  - color: {r: 0.2901961, g: 0.2901961, b: 0.2901961, a: 1}
-    prefab: {fileID: 4134065772903497749, guid: 1ed455706c3623b4491d79ce6ff4071b,
-      type: 3}
-  - color: {r: 0.09019608, g: 0.078431375, b: 0.078431375, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 0afb48fd329f9c948be7214193ff0684,
-      type: 3}
-  - color: {r: 0.09019608, g: 0.078431375, b: 0.078431375, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 1c3bb4578927cd24d9ce5efebdab96ea,
-      type: 3}
-  - color: {r: 0.09019608, g: 0.07058824, b: 0.07058824, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: ce9670068fec4d04186d54136f74aa6e,
-      type: 3}
-  - color: {r: 0.09019608, g: 0.07058824, b: 0.07058824, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 1abf33459409daf4f8b8421bbd462fab,
-      type: 3}
-  - color: {r: 0.09019608, g: 0.0627451, b: 0.0627451, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 63f0b92efbe32db4eb3dd9e801db658f,
-      type: 3}
-  - color: {r: 0.09019608, g: 0.0627451, b: 0.0627451, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: a6b3b9cb0083e3e4f85278ed7e803cec,
-      type: 3}
-  - color: {r: 0.25882354, g: 0.18039216, b: 0.18039216, a: 1}
-    prefab: {fileID: 3510822648313158458, guid: db1ac42e63c2af0468211c71699adba8,
-      type: 3}
-  - color: {r: 0.25882354, g: 0.16862746, b: 0.16862746, a: 1}
-    prefab: {fileID: 1689979308180169851, guid: b2ad88ee0db42a34ba97490def4851ad,
-      type: 3}
-  - color: {r: 0.2784314, g: 0.25882354, b: 0, a: 1}
-    prefab: {fileID: 3296265921120392719, guid: 2d287e4987552a44eba167f67b3141e6,
-      type: 3}
-  - color: {r: 0.12941177, g: 0.105882354, b: 0.09019608, a: 1}
-    prefab: {fileID: 9218334142741063495, guid: bcd3da01977ce664ea484f9e19a0aa03,
-      type: 3}
-  - color: {r: 0.2784314, g: 0.3137255, b: 0, a: 1}
-    prefab: {fileID: 564617402358170415, guid: f11152c9e0ada9b4bbf6646961bc49ac, type: 3}
-  - color: {r: 0.12941177, g: 0.101960786, b: 0.078431375, a: 1}
-    prefab: {fileID: 2945675271738563885, guid: 91880691d5a324a4ca2bc2e084c588c0,
-      type: 3}
-  - color: {r: 0.44705883, g: 0.58431375, b: 0.6392157, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: d48818b0542911f4d912ddd77730a20c,
-      type: 3}
-  - color: {r: 0.41568628, g: 0.5764706, b: 0.6392157, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 2264fb4998df92a41921c8a8bef1b75c,
-      type: 3}
-  - color: {r: 0.38431373, g: 0.5647059, b: 0.6392157, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: cbdf044e290a35d439e57a226f49798b,
-      type: 3}
-  - color: {r: 0.3529412, g: 0.5568628, b: 0.6392157, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 61df8bf29c53bcb4cb17d82d13471234,
-      type: 3}
-  - color: {r: 0.44705886, g: 0.58431375, b: 0.6392157, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 2e828c1d9d8c53b44962fba0acf116b1,
-      type: 3}
-  - color: {r: 0.4156863, g: 0.5764706, b: 0.6392157, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 1c3bb4578927cd24d9ce5efebdab96ea,
-      type: 3}
-  - color: {r: 0.38431376, g: 0.5647059, b: 0.6392157, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 1abf33459409daf4f8b8421bbd462fab,
-      type: 3}
-  - color: {r: 0.3529412, g: 0.5568628, b: 0.6392157, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: a6b3b9cb0083e3e4f85278ed7e803cec,
-      type: 3}
-  - color: {r: 0.2784314, g: 0.3137255, b: 0, a: 1}
-    prefab: {fileID: 8946471339967875108, guid: d9280d31fd2caa540b1cfbcd99039378,
-      type: 3}
-  - color: {r: 0.12941177, g: 0.101960786, b: 0.078431375, a: 1}
-    prefab: {fileID: 4389330090259095558, guid: b670d6a6d37419249b5f4b3ce595f0b9,
-      type: 3}
-  - color: {r: 0.003921569, g: 0.99607843, b: 0.003921569, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 54bb1e5ec3dd42645a6c3de60c471090,
-      type: 3}
-  - color: {r: 0, g: 0.69411767, b: 0, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: c82cff5064dc93449a92458ec20263f9,
-      type: 3}
-  - color: {r: 0, g: 0.40784317, b: 0, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 37cdb78d3ebf01d4b87a2d1cb3dafb26,
-      type: 3}
-  - color: {r: 0, g: 0.2392157, b: 0, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 914998fa301c82d4c8837609d06237bd,
-      type: 3}
-  - color: {r: 0.003921569, g: 0.9960785, b: 0.003921569, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 2e828c1d9d8c53b44962fba0acf116b1,
-      type: 3}
-  - color: {r: 0, g: 0.69411767, b: 0, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 1c3bb4578927cd24d9ce5efebdab96ea,
-      type: 3}
-  - color: {r: 0, g: 0.40784317, b: 0, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 1abf33459409daf4f8b8421bbd462fab,
-      type: 3}
-  - color: {r: 0, g: 0.2392157, b: 0, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: a6b3b9cb0083e3e4f85278ed7e803cec,
-      type: 3}
-  - color: {r: 0, g: 0, b: 1, a: 1}
-    prefab: {fileID: 8963617297562798821, guid: 998bf70a9babf7d459b42019a0fd25b4,
-      type: 3}
-  - color: {r: 1, g: 0, b: 0.21568628, a: 1}
-    prefab: {fileID: 1171925194323104767, guid: ce6d1dcda63aebe4eacd36a3ea46b324,
-      type: 3}
-  - color: {r: 0.2783019, g: 1, b: 0.42826518, a: 1}
-    prefab: {fileID: 626021710546446677, guid: 1df31d0cb78cbe64e82face57b782083, type: 3}
-  - color: {r: 0.4521182, g: 0.754717, b: 0.5129023, a: 1}
-    prefab: {fileID: 1006682874477649570, guid: 209355cc404b69944b3ddd108fc2357b,
-      type: 3}

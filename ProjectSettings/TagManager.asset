@@ -3,7 +3,28 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - BreakBlock
+  - Bullet
+  - Ladder
+  - pBullet
+  - Enemy
+  - CheckPoint
+  - Granade
+  - Range
+  - PlayerManager
+  - eBullet
+  - CheckPointRange
+  - lvlDone
+  - LevelDiff
+  - RightTrigger
+  - LeftTrigger
+  - toxBullet
+  - UIstuff
+  - PlayerBox
+  - Shield
+  - DeathBlock
+  - Level
   layers:
   - Default
   - TransparentFX
@@ -13,15 +34,15 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Ladder
+  - Bullet
+  - Enemy
+  - Player Bullet
+  - Granade
+  - Player
+  - Potions
+  - Shield
   - 
   - 
   - 

@@ -19,6 +19,7 @@ public class LevelGenerator : MonoBehaviour
 	    if (SceneManager.GetActiveScene().name == "Endless")
 	    {
 		    map = mapCollection[Random.Range(0, mapCollection.Length)];
+			Instantiate(map);
 	    }
 	}
 
@@ -33,10 +34,8 @@ public class LevelGenerator : MonoBehaviour
         Destroy(player);
         GameObject map = GameObject.FindGameObjectWithTag("Level");
         Destroy(map);
-
         yield return new WaitForSeconds(0.2f);
-        GManager gm = GameObject.Find("GameManager").GetComponent<GManager>();
-        gm.killed = 1;
+		FindObjectOfType<GManager>().killed = 1;
         yield return new WaitForSeconds(0.2f);
         map = mapCollection[Random.Range(0, mapCollection.Length)];
         Instantiate(map);

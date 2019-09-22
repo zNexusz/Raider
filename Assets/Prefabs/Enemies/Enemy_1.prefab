@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2788780826910363792}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: 0.02, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 3.763, y: -0.192, z: 0}
+  m_LocalScale: {x: 0.0979, y: 0.0979, z: 0.1958}
   m_Children: []
   m_Father: {fileID: 5902618901923431819}
   m_RootOrder: 2
@@ -69,12 +69,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c3141312f8bd46b459b3f333a02785a3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8470fa8799f7fde41bf16c8975d2affd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -188,7 +188,6 @@ MonoBehaviour:
   XDistance: 0
   health: 4
   gManager: {fileID: 0}
-  GManager: {fileID: 0}
   offset: {x: 0, y: 0}
   killReward: 5
   PlayerShootTrigger: {fileID: 5800281108613089696}
@@ -415,12 +414,12 @@ PrefabInstance:
     - target: {fileID: 1384905177879302779, guid: 644c61fd4272cf545a6596c1fa237bd0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.398
       objectReference: {fileID: 0}
     - target: {fileID: 1384905177879302779, guid: 644c61fd4272cf545a6596c1fa237bd0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.03700006
+      value: -0.146
       objectReference: {fileID: 0}
     - target: {fileID: 1384905177879302779, guid: 644c61fd4272cf545a6596c1fa237bd0,
         type: 3}

@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
 	private int xJump;
 	private int xJumpValue=2;
 	//ladder
-	private float Lspeed=5;
 	private float inputHorizontal;
 	private float inputVertical;
 
@@ -89,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
 	{
-        if (gManager.Char == 1 || gManager.Char == 2 && isGrounded == true)
+        if (gManager.Char == 1 && isGrounded == true || gManager.Char == 2 && isGrounded == true)
 		{
 			rb.velocity = Vector2.up * JForce;
         }
@@ -97,7 +96,8 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = Vector2.up * JForce;
             xJump--;
-        }else if(isLadder == true)
+        }
+		if (isLadder == true)
         {
             rb.velocity = new Vector2(0, 4f);
         }

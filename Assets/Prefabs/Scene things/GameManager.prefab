@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2083348186592304554}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: PlayerManager
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,12 +52,10 @@ MonoBehaviour:
   EDamage: 0
   maxhp: 0
   playerHealth: 0
-  Scoin: 0
   earning: 0
   kill: 0
   killed: 0
   enemynum: 0
-  Difficulty: 1
   secounds: 0
   minutes: 0
   timeLimit: 0
@@ -66,7 +64,6 @@ MonoBehaviour:
   missionHealth: 0
   MissionCleared: 0
   currentScene: 
-  EndScore: 0
   Enemyflash: 0
   shield_active: 0
   Score: {fileID: 0}
@@ -108,3 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a489e70e676f7b941b5f3a90b3e6456c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MoneyEarned: 0
+  ThisScore: 0
+  ThisKilled: 0

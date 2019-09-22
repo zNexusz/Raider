@@ -14,8 +14,7 @@ public class Timeruicount : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject go = GameObject.FindGameObjectWithTag("PlayerManager");
-        gManager = go.GetComponent<GManager>();
+		gManager = FindObjectOfType<GManager>();
         StartCoroutine(CountNow());
     }
 
