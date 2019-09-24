@@ -89,8 +89,8 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    <Reference Include="Unity.2D.PixelPerfect.Editor">
+      <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -104,14 +104,14 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Anuram/Documents/GitHub/Raider/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>

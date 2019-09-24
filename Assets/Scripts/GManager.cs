@@ -182,11 +182,10 @@ public class GManager : MonoBehaviour
 
 		if (Char == 2)
 		{
-			health = 6;
+			health = 3;
 			Damage = 1; 
 			EDamage = 2;
 			maxhp = 3;
-			Debug.Log("hey");
 		}
 
 		if (Char == 3)
