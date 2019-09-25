@@ -50,7 +50,8 @@ public class PlayerGranade : MonoBehaviour {
 	public void HPpotion()
 	{
 		healed = 0;
-		if(hp_count>0)hp_count--;
+		GameObject.FindObjectOfType<AudioManager>().Play("potion_break");
+		if (hp_count>0)hp_count--;
 		PlayerPrefs.SetInt("hp_potion_count", hp_count);
 		if(hp_count>0) Instantiate(health_potion, player.position, Quaternion.identity);
 		
@@ -74,7 +75,8 @@ public class PlayerGranade : MonoBehaviour {
 	{
 		if(flash_count>0)flash_count--;
 		PlayerPrefs.SetInt("flash_potion_count",flash_count);
-		if(flash_count>0) Instantiate(flash, player.position, Quaternion.identity);
+		GameObject.FindObjectOfType<AudioManager>().Play("potion_break");
+		if (flash_count>0) Instantiate(flash, player.position, Quaternion.identity);
 	}
 	
 	public void Shieldpotion()
@@ -92,7 +94,7 @@ public class PlayerGranade : MonoBehaviour {
 	{
 		useShield = true;
 		shield.SetActive(true);
-		GameObject.FindObjectOfType<AudioManager>().Play("Shield_potion");
+		GameObject.FindObjectOfType<AudioManager>().Play("shield_slam");
 		GameObject.Find("GameManager").GetComponent<GManager>().Damage = 0;
 		yield return new WaitForSeconds(5);
 		shield.SetActive(false);

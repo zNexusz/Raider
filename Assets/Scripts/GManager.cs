@@ -87,9 +87,7 @@ public class GManager : MonoBehaviour
 		
 		if (currentScene != "Endless" && currentScene != "LevelSelector" && currentScene != "PlayerShop")
 		{
-			//level timer
-			//mission 
-			if (killed <= 0)
+			if (enemynum < 1)
 			{
 				MissionCleared = 1;
 				MissionClear();
@@ -97,19 +95,12 @@ public class GManager : MonoBehaviour
 			
 		}
 
-		if (currentScene == "Endless" && GameObject.Find("LevelManager").GetComponent<LevelManager>().EndReady == true)
+		if (currentScene == "Endless" && GameObject.Find("LevelManager").GetComponent<LevelManager>().EndReady == true && killed < 1)
 		{
-			killed = enemynum;
-			//level time
-			//mission 
-			if (killed <= 0)
-			{
-				MissionCleared = 1;
-				MissionClear();
-			}
-        
-			//
+			MissionCleared = 1;
+			MissionClear();
 		}
+
 		if (killed > 0)
 		{
 			if (playerHealth > 0)
@@ -147,15 +138,6 @@ public class GManager : MonoBehaviour
 	    
 	    if (currentScene == "Endless")
 	    {
-		    if (timer < timeLimit)
-		    {
-			    MissionCleared++;
-		    }
-
-		    if (playerHealth > missionHealth)
-		    {
-			    MissionCleared++;
-		    }
 		    GameObject.Find("Menus").GetComponent<MenuManager>().Dead();
 		    GameObject.Find("LevelManager").GetComponent<LevelManager>().lvlStars();
 		    //
@@ -166,8 +148,11 @@ public class GManager : MonoBehaviour
 		    }
 		    PlayerPrefs.SetInt("LastGameScore", FindObjectOfType<StatusCurrency>().ThisScore);
 	    }
-        if (FindObjectOfType<LevelManager>().ThisLevel >= PlayerPrefs.GetInt("LevelReached")) PlayerPrefs.SetInt("LevelReached", GameObject.FindObjectOfType<LevelManager>().NextLevel);
 
+		if (FindObjectOfType<LevelManager>().ThisLevel >= PlayerPrefs.GetInt("LevelReached"))
+		{
+			PlayerPrefs.SetInt("LevelReached", GameObject.FindObjectOfType<LevelManager>().NextLevel);
+		}
     }
 
 	public void Stats()

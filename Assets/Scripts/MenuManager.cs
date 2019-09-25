@@ -38,8 +38,7 @@ public class MenuManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-	    currentScene = SceneManager.GetActiveScene().name;
-	    ReviveLimit = 2;
+	    currentScene = SceneManager.GetActiveScene().name;	
 		DeathMenu.SetActive(false);
 		GameOverMenu.SetActive(false);
 		if(currentScene == "Endless")star1.SetActive(false); star2.SetActive(false); star3.SetActive(false);
@@ -49,7 +48,15 @@ public class MenuManager : MonoBehaviour
 	{
 		GameOverMenu.SetActive(true);
 		DeathMenu.SetActive(false);
-		
+
+		if (currentScene == "Endless")
+		{
+			if(playerHealth.health > 0 && dead == false)
+			{
+				missioncleared.SetActive(true);
+			}
+		}
+
 		if (gManager.MissionCleared == 1 && currentScene != "Endless")
 		{
 			missioncleared.SetActive(true);
@@ -109,7 +116,14 @@ public class MenuManager : MonoBehaviour
 		if (dead == true)
 		{
 			missioncleared.SetActive(false);
-			if(currentScene == "Endless")retryEnd_but.SetActive(true);
+			if(currentScene == "Endless")
+			{
+				retryEnd_but.SetActive(true);
+			}
+			else
+			{
+				retryEnd_but.SetActive(false);
+			}
 		}
 
 		if (currentScene == "Endless")
@@ -124,7 +138,7 @@ public class MenuManager : MonoBehaviour
 			retryEnd_but.SetActive(false);
 		}
 
-		if(playerHealth.health > 0)
+		if(playerHealth.health > 0 && gManager.killed > 0)
 		{
 			DeathMenu.SetActive(false);
 			GameOverMenu.SetActive(false);
@@ -134,6 +148,15 @@ public class MenuManager : MonoBehaviour
 		{
 			dead = true;
 			next_but.SetActive(false);
+			retryEnd_but.SetActive(true);
+		}
+		else
+		{
+			if(dead == false)
+			{
+				next_but.SetActive(true);
+				retryEnd_but.SetActive(false);
+			}
 		}
 
         if (currentScene == "Endless")
@@ -141,7 +164,6 @@ public class MenuManager : MonoBehaviour
             s1.SetActive(false);
             s2.SetActive(false);
             s3.SetActive(false);
-            missioncleared.SetActive(true);
         }
 
     }

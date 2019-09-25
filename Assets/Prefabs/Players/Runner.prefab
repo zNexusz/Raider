@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 3331443283545071274}
-  limit: 5
+  limit: 3
   offset: {x: 0, y: 0.2, z: 0}
   flash: {fileID: 8456194177089987239, guid: d621aa485b31aea409feba740c34a289, type: 3}
   shield_potion: {fileID: 4427359762428531349, guid: e2f28a3034cd12748b8654a809dfeee0,

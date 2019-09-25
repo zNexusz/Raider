@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - UnityEditor.GameObjectBrush
     - UnityEditor.GroupBrush
     - UnityEditor.LineBrush
+    - UnityEditor.PrefabBrush
     - UnityEditor.RandomBrush
     - UnityEditor.TintBrush
     - UnityEditor.TintBrushSmooth
@@ -23,6 +24,7 @@ ScriptsOnlyBuild:
     - EndlessScore
     - Enemy
     - EnemyCounter
+    - EnemyFlashCheck
     - FixedJoystick
     - GManager
     - GameInputFunction
@@ -76,10 +78,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -182,75 +182,77 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10372}
+      Script: {instanceID: 10364}
     - Class: 114
-      Script: {instanceID: 10414}
+      Script: {instanceID: 10374}
     - Class: 114
-      Script: {instanceID: 10480}
+      Script: {instanceID: 10416}
     - Class: 114
-      Script: {instanceID: 10492}
+      Script: {instanceID: 10482}
     - Class: 114
-      Script: {instanceID: 10520}
+      Script: {instanceID: 10494}
     - Class: 114
-      Script: {instanceID: 10524}
+      Script: {instanceID: 10522}
     - Class: 114
-      Script: {instanceID: 10580}
+      Script: {instanceID: 10526}
     - Class: 114
       Script: {instanceID: 10582}
     - Class: 114
-      Script: {instanceID: 10624}
+      Script: {instanceID: 10584}
     - Class: 114
-      Script: {instanceID: 10676}
+      Script: {instanceID: 10626}
     - Class: 114
-      Script: {instanceID: 10762}
+      Script: {instanceID: 10678}
     - Class: 114
-      Script: {instanceID: 10804}
+      Script: {instanceID: 10764}
     - Class: 114
-      Script: {instanceID: 10950}
+      Script: {instanceID: 10806}
     - Class: 114
       Script: {instanceID: 10952}
     - Class: 114
       Script: {instanceID: 10954}
     - Class: 114
-      Script: {instanceID: 10960}
+      Script: {instanceID: 10956}
     - Class: 114
-      Script: {instanceID: 10978}
+      Script: {instanceID: 10962}
     - Class: 114
-      Script: {instanceID: 10984}
+      Script: {instanceID: 10980}
     - Class: 114
-      Script: {instanceID: 11004}
+      Script: {instanceID: 10986}
     - Class: 114
-      Script: {instanceID: 11048}
+      Script: {instanceID: 11006}
     - Class: 114
-      Script: {instanceID: 11078}
+      Script: {instanceID: 11050}
     - Class: 114
-      Script: {instanceID: 11138}
+      Script: {instanceID: 11080}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 11140}
     - Class: 114
-      Script: {instanceID: 11276}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11296}
+      Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11314}
+      Script: {instanceID: 11298}
     - Class: 114
-      Script: {instanceID: 11320}
+      Script: {instanceID: 11316}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11510}
     - Class: 114
       Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 11638}
+      Script: {instanceID: 11566}
     - Class: 114
-      Script: {instanceID: 11674}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 11680}
+      Script: {instanceID: 11676}
     - Class: 114
-      Script: {instanceID: 11730}
+      Script: {instanceID: 11682}
+    - Class: 114
+      Script: {instanceID: 11732}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -333,33 +335,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10548}
+      Script: {instanceID: 10550}
     - Class: 114
-      Script: {instanceID: 10730}
+      Script: {instanceID: 10732}
     - Class: 114
-      Script: {instanceID: 10744}
+      Script: {instanceID: 10746}
     - Class: 114
-      Script: {instanceID: 10762}
+      Script: {instanceID: 10764}
     - Class: 114
-      Script: {instanceID: 10810}
+      Script: {instanceID: 10812}
     - Class: 114
-      Script: {instanceID: 10858}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 10960}
+      Script: {instanceID: 10962}
     - Class: 114
-      Script: {instanceID: 10984}
+      Script: {instanceID: 10986}
     - Class: 114
-      Script: {instanceID: 11276}
+      Script: {instanceID: 11278}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11510}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11608}
     - Class: 114
-      Script: {instanceID: 11674}
+      Script: {instanceID: 11676}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -705,6 +707,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 16f6e5eef9a2a56f23e9fe05744fa307
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyFlashCheck
   - hash:
       serializedVersion: 2
       Hash: 0fb27be807aa299702f28ad0bcad1f46
@@ -1259,6 +1267,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Endless.unity
   - Assets/Scenes/LevelSelector.unity
+  - Assets/Scenes/Endless.unity
   playerPath: C:/Users/Anuram/Desktop/app.aab

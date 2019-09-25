@@ -54,4 +54,19 @@ public class GameInputFunction : MonoBehaviour
         FindObjectOfType<PlayerMovement>().Jump();
     }
     #endregion
+
+	public void ThrowHP()
+	{
+		FindObjectOfType<PlayerGranade>().HPpotion();
+	}
+
+	public void ThrowFlash()
+	{
+		FindObjectOfType<PlayerGranade>().Flashpotion();
+	}
+
+	public void ThrowShield()
+	{
+		FindObjectOfType<PlayerGranade>().Shieldpotion();
+	}
 }

@@ -231,7 +231,13 @@ public class Enemy : MonoBehaviour
             health = 0;
             dead = true;
         }
-    }
+
+		if (other.CompareTag("Range"))
+		{
+			health = 0;
+			dead = true;
+		}
+	}
 
     IEnumerator ColorChanger()
     {
