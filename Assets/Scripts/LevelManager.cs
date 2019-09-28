@@ -53,8 +53,7 @@ public class LevelManager : MonoBehaviour
         if (currentScene == "Endless")
         {
             yield return new WaitForSeconds(0.2f);
-            killed = gManager.enemynum;
-            gManager.killed = killed;
+			gManager.enemyCount();
             yield return new WaitForSeconds(0.2f);
             EndReady = true;
         }

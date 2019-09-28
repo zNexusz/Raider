@@ -28,7 +28,7 @@ public class LevelGenerator : MonoBehaviour
         StartCoroutine(reset());
     }
 
-    IEnumerator reset()
+    IEnumerator reset()//important
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         Destroy(player);
@@ -36,9 +36,10 @@ public class LevelGenerator : MonoBehaviour
         Destroy(map);
         yield return new WaitForSeconds(0.2f);
 		FindObjectOfType<GManager>().killed = 1;
-        yield return new WaitForSeconds(0.2f);
         map = mapCollection[Random.Range(0, mapCollection.Length)];
         Instantiate(map);
-    }
-    #endregion
+		StartCoroutine(FindObjectOfType<LevelManager>().EndlessStat());
+		StartCoroutine(FindObjectOfType<Timeruicount>().CountNow());
+	}
+	#endregion
 }

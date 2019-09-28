@@ -15,11 +15,12 @@ public class shield_potion : MonoBehaviour
         if (used < 1)
         {
             used++;
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
 			GameObject.FindObjectOfType<AudioManager>().Play("Potion_break");
 			gameObject.GetComponent<ParticleSystem>().Play();
             yield return new WaitForSeconds(0.6f);
-            gameObject.GetComponent<ParticleSystem>().Stop(); 
-        }
-    }
+            gameObject.GetComponent<ParticleSystem>().Stop();
+			yield return new WaitForSeconds(0.6f);
+			Destroy(gameObject);
+		}
+	}
 }

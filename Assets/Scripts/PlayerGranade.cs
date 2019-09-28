@@ -22,7 +22,7 @@ public class PlayerGranade : MonoBehaviour {
 	private int shield_count;
 	//
 	public GameObject shield;
-	private bool useShield;
+	public bool useShield;
 
 
 	#endregion
@@ -50,11 +50,14 @@ public class PlayerGranade : MonoBehaviour {
 	public void HPpotion()
 	{
 		healed = 0;
-		GameObject.FindObjectOfType<AudioManager>().Play("potion_break");
 		if (hp_count>0)hp_count--;
 		PlayerPrefs.SetInt("hp_potion_count", hp_count);
-		if(hp_count>0) Instantiate(health_potion, player.position, Quaternion.identity);
-		
+		if (hp_count > 0)
+		{
+			Instantiate(health_potion, player.position, Quaternion.identity);////
+			GameObject.FindObjectOfType<AudioManager>().Play("potion_break");
+		}
+
 		if (hp_count> 0 && gameObject.GetComponent<PlayerHealth>().health <= GameObject.Find("GameManager").GetComponent<GManager>().maxhp && healed < 3)
 		{
 			healed++;
@@ -75,8 +78,11 @@ public class PlayerGranade : MonoBehaviour {
 	{
 		if(flash_count>0)flash_count--;
 		PlayerPrefs.SetInt("flash_potion_count",flash_count);
-		GameObject.FindObjectOfType<AudioManager>().Play("potion_break");
-		if (flash_count>0) Instantiate(flash, player.position, Quaternion.identity);
+		if (flash_count>0)
+		{
+			Instantiate(flash, player.position, Quaternion.identity);
+			GameObject.FindObjectOfType<AudioManager>().Play("potion_break");
+		}
 	}
 	
 	public void Shieldpotion()
@@ -85,7 +91,10 @@ public class PlayerGranade : MonoBehaviour {
 		{
 			if(shield_count>0)shield_count--;
 			PlayerPrefs.SetInt("shield_potion_count", shield_count);
-			if(shield_count>0) Instantiate(shield_potion, player.position, Quaternion.identity);
+			if(shield_count>0)
+			{
+				Instantiate(shield_potion, player.position, Quaternion.identity);
+			}	
 			StartCoroutine(ShieldON());
 		}
 	}

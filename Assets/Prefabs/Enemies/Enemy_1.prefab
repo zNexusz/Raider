@@ -264,16 +264,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2478738863208877989}
   speed: 2
-  stoppingDistance: 0.5
-  AllowDistance: 6
+  stoppingDistance: 1.5
+  AllowDistance: 4
   YDistance: 0
   XDistance: 0
   health: 4
   gManager: {fileID: 0}
-  offset: {x: 0, y: 0}
   killReward: 5
   PlayerShootTrigger: {fileID: 5800281108613089696}
-  timeBtwShots: 0
+  timeBtwShots: 1
   startTimeBtwShots: 2
   player: {fileID: 0}
   Player: {fileID: 0}

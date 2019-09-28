@@ -5,7 +5,6 @@ ScriptsOnlyBuild:
     - UnityEditor.GameObjectBrush
     - UnityEditor.GroupBrush
     - UnityEditor.LineBrush
-    - UnityEditor.PrefabBrush
     - UnityEditor.RandomBrush
     - UnityEditor.TintBrush
     - UnityEditor.TintBrushSmooth
@@ -78,8 +77,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -415,7 +416,7 @@ ScriptsOnlyBuild:
     className: BlockScript
   - hash:
       serializedVersion: 2
-      Hash: 90123b94d0e0d914a0ea524f293e93c3
+      Hash: a9ff39fd3529deae42aa7b0a75a5244c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerGranade
@@ -691,7 +692,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: b17e2dafa8bbcf524591d736308255a0
+      Hash: c3cd18dc0ee6da99c437c44887c9ec7e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -835,7 +836,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: bf91c7e1e52b301ee34ba913e0dd9a98
+      Hash: efca96a78413b7d4920c4d05f93fd0d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement

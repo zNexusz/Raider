@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 	public LayerMask whatIsGround;
 
 	private int xJump;
-	private int xJumpValue=2;
+	public int xJumpValue=2;
 	//ladder
 	private float inputHorizontal;
 	private float inputVertical;
@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(isLadder==true && FindObjectOfType<GameInputFunction>().jump == false)
         {
-            rb.velocity = new Vector2(0, -3f);
+            rb.velocity = new Vector2(0, -1f);
         }
 	}
 

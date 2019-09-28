@@ -72,6 +72,15 @@ public class GManager : MonoBehaviour
        
     }
 
+	public void enemyCount()
+	{
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");//!! enemy counter
+		for (int i = 0; i - 1 < enemies.Length; ++i)
+		{
+			killed = i;
+		}
+	}
+
 	void Update()
 	{
 		playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().health;
@@ -199,20 +208,4 @@ public class GManager : MonoBehaviour
 		Char = 3;
 		PlayerPrefs.SetInt("CurrCharacter", Char);
 	}
-
-	public void Hp_potion()
-	{
-		GameObject.FindWithTag("Player").GetComponent<PlayerGranade>().HPpotion();
-	}
-	
-	public void Flash_potion()
-	{
-		GameObject.FindWithTag("Player").GetComponent<PlayerGranade>().Flashpotion();
-	}
-	
-	public void Shield_potion()
-	{
-		GameObject.FindWithTag("Player").GetComponent<PlayerGranade>().Shieldpotion();
-	}
-	
 }

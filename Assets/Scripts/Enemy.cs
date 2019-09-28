@@ -20,7 +20,6 @@ public class Enemy : MonoBehaviour
 	//
 	public int health;
 	public GManager gManager;
-    public Vector2 offset;
 	private Rigidbody2D rb;
 	public int killReward=5;
 	//
@@ -185,6 +184,7 @@ public class Enemy : MonoBehaviour
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
         gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
 		gameObject.GetComponent<Rigidbody2D>().gravityScale = 2;
+		Destroy(eBullet);
     }
 
     IEnumerator Chase()

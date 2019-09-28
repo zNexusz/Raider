@@ -144,20 +144,27 @@ public class MenuManager : MonoBehaviour
 			GameOverMenu.SetActive(false);
 		}
 
-		if(playerHealth.health < 1 && ReviveLimit < 1)
+		if(ReviveLimit < 1)
 		{
-			dead = true;
-			next_but.SetActive(false);
-			retryEnd_but.SetActive(true);
-		}
-		else
-		{
-			if(dead == false)
+			if(playerHealth.health < 1)
 			{
-				next_but.SetActive(true);
-				retryEnd_but.SetActive(false);
+				dead = true;
+				next_but.SetActive(false);
+				retryEnd_but.SetActive(true);
+			}
+			else
+			{
+				if (playerHealth.health > 0) dead = false;
+				if (dead == false)
+				{
+					next_but.SetActive(true);
+					retryEnd_but.SetActive(false);
+				}
 			}
 		}
+		
+
+		
 
         if (currentScene == "Endless")
         {
