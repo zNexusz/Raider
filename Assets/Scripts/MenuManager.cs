@@ -125,6 +125,11 @@ public class MenuManager : MonoBehaviour
 				retryEnd_but.SetActive(false);
 			}
 		}
+		else
+		{
+			next_but.SetActive(true);
+			retryEnd_but.SetActive(false);
+		}
 
 		if (currentScene == "Endless")
 		{
